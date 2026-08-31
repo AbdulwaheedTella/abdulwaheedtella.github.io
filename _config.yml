@@ -3,24 +3,34 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+first_name: Abdulwaheed
+middle_name: # no middle name on record — leave blank
+last_name: Tella
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Email is the most reliable way to reach me; I usually reply within a couple of days.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  GeoAI researcher and data scientist working on explainable and transferable machine
+  learning for flood susceptibility mapping, remote sensing, and spatial data science.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: GeoAI, geospatial AI, flood susceptibility mapping, remote sensing, explainable AI, spatial data science, machine learning, GIS # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
+icon: 🌊 # the emoji used as the favicon (alternatively, provide image name in /assets/img/) — swapped to a wave/flood-adjacent emoji; change if you'd rather keep ⚛️ or use a real image
+apple_touch_icon: # TODO: add a 180x180 PNG in /assets/img/ and reference it here, or iOS falls back to a screenshot
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
+# TODO — confirm before deploying:
+# `url` must match how GitHub Pages actually serves this repo.
+#   - If the repo is named AbdulwaheedTella.github.io (a user/org page), the site
+#     serves at the root: url: https://abdulwaheedtella.github.io and baseurl: ""
+#   - If it's a project repo (e.g. github.com/AbdulwaheedTella/portfolio), it serves
+#     under a subpath: url: https://abdulwaheedtella.github.io and baseurl: /portfolio
+#   - If you point a custom domain at it (e.g. via a CNAME file), use that domain
+#     instead and leave baseurl blank: url: https://yourdomain.com, baseurl: ""
+# Filled in below with the user-page assumption — update if your repo is named differently.
+url: https://abdulwaheedtella.github.io
+baseurl: # leave blank for a user/org page or a custom domain; set to /repo-name for a project page
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -36,7 +46,7 @@ repo_theme_dark: dark # https://github.com/stats-organization/github-stats-exten
 # `user@host` and no `mailto:` for harvesters to scrape, and clicking one copies
 # it to the clipboard instead of opening a mail client.
 # See "Protecting email addresses from scrapers" in docs/CUSTOMIZE.md.
-protect_email: false
+protect_email: true # switched on — your personal and institutional emails are public-facing on this site
 
 # Off by default: the free public github-profile-trophy instance is disabled
 # (its Vercel deployment answers HTTP 402 / DEPLOYMENT_DISABLED), so every trophy
@@ -110,9 +120,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # turned on so links you share (LinkedIn, email, Slack) show a proper preview card
+serve_schema_org: true # turned on for Person/ScholarlyArticle structured data, matching your other site
+og_image: # TODO: add a 1200x630 image (e.g. assets/img/og-cover.png) and reference it here
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -121,7 +131,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 analytics:
   # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
   # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-  google: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+  google: # TODO: your GA4 measurement ID (format: G-XXXXXXXXXX), if you want visitor analytics
   cronitor: # cronitor RUM analytics site ID (format: XXXXXXXXX)
   pirsch: # your Pirsch analytics site ID (length 32 characters)
   openpanel: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
@@ -129,15 +139,15 @@ analytics:
 enable_simple_analytics: false # Simple Analytics identifies a site by its domain, so it has no ID to set above
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: # your google-site-verification ID (Google Search Console)
-bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+google_site_verification: # TODO: add once you register this site in Google Search Console
+bing_site_verification: # TODO: add once you register this site in Bing Webmaster Tools
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Abdulwaheed Tella # blog_name will be displayed in your blog page
+blog_description: Notes on GeoAI, flood risk modelling, explainable AI and spatial data science.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -152,7 +162,7 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
+  repo: AbdulwaheedTella/AbdulwaheedTella.github.io # TODO: still requires installing the giscus GitHub App on this repo — see https://giscus.app/ to get repo_id and category_id below
   repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
@@ -166,24 +176,21 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # leave blank — using giscus instead, once configured above
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
+# Your existing abdulwaheedtella.com site pulls a Blogger feed for "Research Blog" —
+# if that's the same content you want here, replace the example below with your
+# actual Blogger RSS URL (Settings > Site RSS in Blogger, usually /feeds/posts/default).
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+  # - name: Blogger
+  #   rss_url: https://<your-blogger-subdomain>.blogspot.com/feeds/posts/default
+  #   categories: [external-posts]
+  #   tags: [blogger]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -356,8 +363,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Tella]
+  first_name: [Abdulwaheed, A.]
 
   style: apa
   locale: en
@@ -386,7 +393,7 @@ enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
   google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  inspirehep: false # not relevant to your fields (physics citation index) — switched off
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -479,7 +486,7 @@ enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social: false # enables displaying social links in the navbar on the about page
+enable_navbar_social: true # turned on — shows your LinkedIn/Scholar/GitHub icons in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
