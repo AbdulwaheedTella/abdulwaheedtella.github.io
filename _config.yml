@@ -176,7 +176,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: # leave blank — using giscus instead, once configured above
+disqus_shortname: al-folio # restored to the template default
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
