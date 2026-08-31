@@ -162,7 +162,7 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: AbdulwaheedTella/AbdulwaheedTella.github.io # TODO: still requires installing the giscus GitHub App on this repo — see https://giscus.app/ to get repo_id and category_id below
+  repo: # TODO: e.g. AbdulwaheedTella/AbdulwaheedTella.github.io — go to https://giscus.app/, confirm the giscus GitHub App is installed on that repo, then fill this in together with repo_id and category_id below (a partial config here failed the comments-integration-tests job)
   repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
