@@ -33,6 +33,8 @@ _layouts/   _includes/   _sass/   _scripts/   assets/tailwind/   tailwind.config
 
 `npm run lint:style-contract` fails CI when any of them exists here, and it also rejects `build:css` / `build:tailwind` npm scripts. Do not add a starter-local Tailwind or CSS build pipeline.
 
+**Exception for this site:** it deliberately owns `_layouts/site.liquid`, `_layouts/project.liquid` and `_includes/site/` (new names, not shadows of gem files) plus `assets/css/site.css` and `assets/js/publications-filter.js`. Content lives in `_data/*.yml` and `_projects/*.md`; see [`docs/EDITING.md`](docs/EDITING.md). `_sass`, Tailwind and the other paths above stay forbidden.
+
 This restriction applies to **this repo only**. A user's own site created from this template _may_ legally shadow gem-owned files — see [local overrides: your site vs. this repo](docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo).
 
 ## Three failures that produce no error message

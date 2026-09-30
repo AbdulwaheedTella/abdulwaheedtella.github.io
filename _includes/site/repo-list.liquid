@@ -1,0 +1,26 @@
+{%- comment -%}
+  Public repositories from _data/repositories.yml (a hand-maintained snapshot, so the page needs no API calls or third-party widgets).
+{%- endcomment -%}
+<ul class="site-repos">
+  {% for r in site.data.repositories.repos %}
+    <li>
+      <p class="site-repo-name">
+        <a href="https://github.com/{{ site.data.socials.github_username }}/{{ r.name }}" rel="noopener">
+          {{- r.name -}}
+          <span class="sr-only"> (opens GitHub)</span></a
+        >
+      </p>
+      <p>{{ r.description }}</p>
+      <p class="site-repo-meta">
+        <span>{{ r.language }}</span>
+        <span>{{ r.stars }} stars</span>
+        <span
+          >Updated <time datetime="{{ r.updated | date: '%Y-%m-%d' }}">{{ r.updated | date: '%b %Y' }}</time></span
+        >
+      </p>
+    </li>
+  {% endfor %}
+</ul>
+<p class="site-note">
+  The code behind the research papers on this site is currently in private repositories. Details and access can be requested by email.
+</p>

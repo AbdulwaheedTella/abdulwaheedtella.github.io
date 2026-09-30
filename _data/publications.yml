@@ -1,0 +1,314 @@
+# Publications, transcribed from the CV (Sept 2026). Newest first within each type.
+# Author names are shown as in the CV; **bold** marks me, and corresponding: true marks the corresponding author.
+#
+# Fields: id, type (journal | chapter | conference), year, title, authors, venue, detail (volume/pages, optional),
+#         doi (optional), url (optional, used when there is no DOI), quartile (optional), note (optional),
+#         topics (list of slugs from `topics:` below), selected (optional), code / dataset (optional URLs), project (optional project slug).
+# To add a paper: append an entry here; the publications page, filters and the home page update automatically.
+
+topics:
+  - { slug: flood, label: Flood and hazard modelling }
+  - { slug: xai, label: Explainable and reliable AI }
+  - { slug: eo, label: Earth observation }
+  - { slug: air, label: Air quality }
+  - { slug: urban, label: Urban climate and heat }
+  - { slug: decision, label: Decision support }
+  - { slug: climate, label: Climate and sustainability }
+
+types:
+  journal: Journal article
+  chapter: Book chapter
+  conference: Conference paper
+
+scholar_url: https://scholar.google.com/citations?user=VNYbr6cAAAAJ&hl=en
+orcid_url: https://orcid.org/0000-0002-4380-3343
+
+published:
+  - id: J16
+    type: journal
+    year: 2026
+    title: "From Prediction to Prevention: An Explainable GeoAI Framework for Flood Susceptibility and Urban Exposure Assessment Using Machine and Deep Learning Models"
+    authors: "**Tella, A.**, Zahidi, I., Chow, M. F., Okolie, C., & Pham, Q. B."
+    venue: Sustainable Development
+    doi: 10.1002/sd.7077
+    quartile: Q1
+    note: "WoS Development Studies, Rank 1/65"
+    topics: [flood, xai]
+    selected: true
+    project: explainable-geoai-flood-susceptibility
+
+  - id: J15
+    type: journal
+    year: 2026
+    title: "Advancing flood susceptibility mapping with explainable AI: A novel application of accumulated local effects (ALE)"
+    authors: "**Tella, A.**, Pham, Q. B., Zahidi, I., Fai, C. M., & Ibrahim, K. S. M. H."
+    venue: Water Resources Management
+    doi: 10.1007/s11269-025-04430-0
+    quartile: Q1
+    topics: [flood, xai]
+    selected: true
+    project: explainable-geoai-flood-susceptibility
+
+  - id: J14
+    type: journal
+    year: 2025
+    title: "Uncovering Spatiotemporal Urban Flood Dynamics: An Explainable GeoAI Approach to Land Cover Change Over Two Decades"
+    authors: "**Tella, A.**, Zahidi, I., Fai, C. M., et al."
+    venue: Earth Systems and Environment
+    doi: 10.1007/s41748-025-00878-7
+    quartile: Q1
+    topics: [flood, eo]
+    selected: true
+    project: urban-flood-dynamics-earth-observation
+
+  - id: J13
+    type: journal
+    year: 2025
+    title: Revealing land use dynamics in armed-conflict hotspots in North-East Nigeria using earth observation data
+    authors: "Lateef, L. O., **Tella, A.**, Miano, J. R., & Aina, Y. A."
+    venue: Land Use Policy
+    detail: "157, 107673"
+    doi: 10.1016/j.landusepol.2025.107673
+    quartile: Q1
+    topics: [eo]
+    selected: true
+
+  - id: J12
+    type: journal
+    year: 2024
+    title: Data-driven landfill suitability mapping in Lagos State using GIS-based multi-criteria decision making
+    authors: "**Tella, A.**, Mustafa, M. R. U., Animashaun, G., et al."
+    venue: International Journal of Environmental Science and Technology
+    doi: 10.1007/s13762-024-05803-5
+    quartile: Q1
+    topics: [decision]
+    project: spatial-decision-support-mcdm
+
+  - id: J11
+    type: journal
+    year: 2023
+    title: An assessment of the spatio-temporal dynamics of Landsat-derived aerosol concentration in relation with land cover and road networks in the Lagos megacity
+    authors: "Ayodele, E., Okolie, C., Akinnusi, S., et al., including **Tella, A.**"
+    venue: Environmental Science and Pollution Research
+    doi: 10.1007/s11356-022-25042-y
+    quartile: Q1
+    topics: [air, eo]
+
+  - id: J10
+    type: journal
+    year: 2022
+    title: Highway Proneness Appraisal to Landslides along Taiping to Ipoh Segment Malaysia, Using MCDM and GIS Techniques
+    authors: "Yamusa, I. B., Ismail, M. S., & **Tella, A.**"
+    venue: Sustainability
+    detail: "14, 9096"
+    doi: 10.3390/su14159096
+    quartile: Q1
+    topics: [flood, decision]
+    project: spatial-decision-support-mcdm
+
+  - id: J9
+    type: journal
+    year: 2022
+    title: "Assessment of data mining, Multi-Criteria Decision Making and Fuzzy-computing techniques for spatial flood susceptibility mapping: a comparative study"
+    authors: "Balogun, A.-L., Sheng, T. Y., Sallehuddin, M. H., Aina, Y., Dano, U. L., Pradhan, B., Yekeen, S., & **Tella, A.**"
+    venue: Geocarto International
+    doi: 10.1080/10106049.2022.2076910
+    quartile: Q1
+    topics: [flood, decision]
+
+  - id: J8
+    type: journal
+    year: 2022
+    title: "Digitalisation for transformative urbanisation, climate change adaptation, and sustainable farming in Africa: trend, opportunities, and challenges"
+    authors: "Balogun, A.-L., Adebisi, N., Abubakar, I. R., Dano, U. L., & **Tella, A.**"
+    venue: Journal of Integrative Environmental Sciences
+    doi: 10.1080/1943815X.2022.2033791
+    quartile: Q1
+    topics: [climate]
+
+  - id: J7
+    type: journal
+    year: 2022
+    title: Modelling and investigating the impacts of climatic variables on ozone concentration in Malaysia using correlation analysis with random forest, decision tree regression, linear regression, and support vector regression
+    authors: "Balogun, A.-L., & **Tella, A.**"
+    corresponding: true
+    venue: Chemosphere
+    detail: "134250"
+    doi: 10.1016/j.chemosphere.2022.134250
+    quartile: Q1
+    topics: [air]
+    project: air-quality-machine-learning-malaysia
+
+  - id: J6
+    type: journal
+    year: 2021
+    title: "GIS-based air quality modelling: spatial prediction of PM10 for Selangor State, Malaysia using machine learning algorithms"
+    authors: "**Tella, A.**, & Balogun, A.-L."
+    venue: Environmental Science and Pollution Research
+    doi: 10.1007/s11356-021-16150-0
+    quartile: Q1
+    topics: [air]
+    project: air-quality-machine-learning-malaysia
+
+  - id: J5
+    type: journal
+    year: 2021
+    title: Spatial assessment of PM10 hotspots using random forest, K-Nearest Neighbour and Naïve Bayes
+    authors: "**Tella, A.**, Balogun, A.-L., Adebisi, N., & Abdullah, S."
+    venue: Atmospheric Pollution Research
+    detail: "101202"
+    doi: 10.1016/j.apr.2021.101202
+    quartile: Q1
+    topics: [air]
+    project: air-quality-machine-learning-malaysia
+
+  - id: J4
+    type: journal
+    year: 2021
+    title: Spatio-temporal modelling of the influence of climatic variables and seasonal variation on PM10 in Malaysia using multivariate regression (MVR) and GIS
+    authors: "**Tella, A.**, Balogun, A.-L., & Faye, I."
+    venue: Geomatics, Natural Hazards and Risk
+    detail: "12(1), 443-468"
+    doi: 10.1080/19475705.2021.1879942
+    quartile: Q1
+    topics: [air]
+    project: air-quality-machine-learning-malaysia
+
+  - id: J3
+    type: journal
+    year: 2021
+    title: A review of the inter-correlation of climate change, air pollution and urban sustainability using novel machine learning algorithms and spatial information science
+    authors: "Balogun, A.-L., **Tella, A.**, Adebisi, N., & Baloo, L."
+    venue: Urban Climate
+    detail: "40, 100989"
+    doi: 10.1016/j.uclim.2021.100989
+    quartile: Q1
+    topics: [urban, air, climate]
+
+  - id: J2
+    type: journal
+    year: 2021
+    title: "Advances in estimating Sea Level Rise: A review of tide gauge, satellite altimetry and spatial data science approaches"
+    authors: "Adebisi, N., Balogun, A.-L., Min, T. H., & **Tella, A.**"
+    venue: Ocean & Coastal Management
+    detail: "208, 105632"
+    doi: 10.1016/j.ocecoaman.2021.105632
+    quartile: Q1
+    topics: [climate, eo]
+
+  - id: J1
+    type: journal
+    year: 2020
+    title: Ensemble fuzzy MCDM for spatial assessment of flood susceptibility in Ibadan, Nigeria
+    authors: "**Tella, A.**, & Balogun, A.-L."
+    venue: Natural Hazards
+    detail: "104, 2277-2306"
+    doi: 10.1007/s11069-020-04272-6
+    quartile: Q1
+    topics: [flood, decision]
+    project: spatial-decision-support-mcdm
+
+  - id: BC2
+    type: chapter
+    year: 2025
+    title: "Chapter 7: Google Earth Engine and artificial intelligence for SDGs"
+    authors: "Aina, Y. A., Rahman, S. M., Yekeen, S. T., **Tella, A.**, Mitra, B., Uddin, M. S., & Balogun, A."
+    venue: "Google Earth Engine and Artificial Intelligence for Earth Observation (V. Sood, D. K. Gupta, S. Singh, & B. Pradhan, Eds.), pp. 115-131. Elsevier"
+    doi: 10.1016/B978-0-443-27372-8.00014-3
+    topics: [eo]
+    selected: true
+
+  - id: BC1
+    type: chapter
+    year: 2022
+    title: "Urban resilience in the fourth industrial revolution: Transformative digitalisation in European smart cities to address climate change"
+    authors: "Balogun, A.-L., Shekhar, H., Budryte, P., et al., including **Tella, A.**, & Yekeen, S. T."
+    venue: "Resilient Smart Cities: Theoretical and Empirical Insights (Chapter 15). Springer"
+    doi: 10.1007/978-3-030-95037-8
+    topics: [urban, climate]
+
+  - id: C6
+    type: conference
+    year: 2023
+    title: Spatial prediction of flood in Kuala Lumpur city of Malaysia using logistic regression
+    authors: "**Tella, A.**, Mustafa, M. R. U., Balogun, A. O., Okolie, C. J., Yamusa, I. B., & Ibrahim, M. B."
+    venue: International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences
+    detail: "XLVIII-4/W6-2022, 363-369"
+    doi: 10.5194/isprs-archives-XLVIII-4-W6-2022-363-2023
+    topics: [flood]
+
+  - id: C5
+    type: conference
+    year: 2021
+    title: Prediction of Ambient PM10 Concentration in Malaysian Cities Using Geostatistical Analyses
+    authors: "**Tella, A.**, & Balogun, A.-L."
+    venue: Journal of Advanced Geospatial Science & Technology
+    detail: "1(1), 115-127"
+    topics: [air]
+
+  - id: C4
+    type: conference
+    year: 2021
+    title: Geospatial Detection of Hidden Lithologies along Taiping to Ipoh Stretch of the Highway Using Medium Resolution Satellite Imagery in Malaysia
+    authors: "Yamusa, I. B., Ismail, M. S., & **Tella, A.**"
+    corresponding: true
+    venue: Journal of Advanced Geospatial Science & Technology
+    detail: "1(1), 19-37"
+    topics: [eo]
+
+  - id: C3
+    type: conference
+    year: 2020
+    title: Spatiotemporal analysis of land-use changes in a metropolitan city in Malaysia
+    authors: "**Tella, A.**, Balogun, A., & Balogun, A."
+    venue: Intercontinental Geoinformation Days (IGD), Mersin, Turkey
+    detail: "148-151"
+    topics: [eo]
+
+  - id: C2
+    type: conference
+    year: 2020
+    title: Using remote sensing to monitor Aerosol Optical Thickness (AOT) and its relationship with land cover in Lagos Metropolis, Nigeria
+    authors: "Ayodele, E., Okolie, C., Akinnusi, S., Mbu-Ogar, E., Daramola, O., **Tella, A.**, Alani, R., & Alademomi, A."
+    venue: Intercontinental Geoinformation Days (IGD), Mersin, Turkey
+    detail: "117-120"
+    topics: [air, eo]
+
+  - id: C1
+    type: conference
+    year: 2020
+    title: Remote sensing approach for aerosol optical thickness (AOT) monitoring in relation to the road network in Lagos Metropolis, Nigeria
+    authors: "Okolie, C., Ayodele, E., Mbu-Ogar, E., Akinnusi, S., Daramola, O., **Tella, A.**, Alani, R., & Alademomi, A."
+    venue: Intercontinental Geoinformation Days (IGD), Mersin, Turkey
+    detail: "38-41"
+    topics: [air, eo]
+
+# Work that is not yet published. Shown separately on the publications page; titles are as listed on the CV.
+in_progress:
+  - title: "Does Ensemble Complexity Improve Urban Flood Susceptibility Mapping? Statistical Evidence from Ensemble and Hybrid Machine Learning Models"
+    venue: Applied Water Science
+    status: Under review
+    topics: [flood, xai]
+  - title: "Toward Reliable GeoAI for Flood Susceptibility Mapping: Integrating Machine Learning with the Area of Applicability in a Rapidly Urbanising City"
+    venue: Geo-spatial Information Science
+    status: Under review
+    topics: [flood, xai]
+    project: reliable-geoai-area-of-applicability
+  - title: "Artificial Intelligence Capability and Readiness in ASEAN: A Systematic Review of Disparities, Drivers, and Policy Alignment"
+    venue: Humanities and Social Sciences Communications
+    status: Under review
+    topics: [decision]
+    project: ai-capability-asean
+  - title: "Machine Learning for Flood Susceptibility Mapping: A Critical Review of Validation Practice and Operational Readiness"
+    venue: Environmental Science & Policy
+    status: Under review
+    topics: [flood, xai]
+  - title: "Flood Susceptibility Mapping: A Systematic Literature Review"
+    venue: ""
+    status: Manuscript in preparation
+    topics: [flood]
+  - title: "Urban Heat Vulnerability Assessment in the Machine Learning Era: A Systematic Review of Methods, Interpretation and the Shift Towards Consequences"
+    venue: Global Challenges
+    status: Submitted
+    topics: [urban, xai]
+    project: urban-heat-exposure-vulnerability

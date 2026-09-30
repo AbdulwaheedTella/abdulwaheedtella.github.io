@@ -1,0 +1,41 @@
+{%- comment -%}
+  A project summary. Params: project (a document of site.projects), detailed (true shows problem, role, tech and outcome).
+{%- endcomment -%}
+{% assign p = include.project %}
+<article class="site-card">
+  <p class="site-card-status">{{ p.status }}</p>
+  <h3 class="site-card-title">
+    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+  </h3>
+  <p>{{ p.summary }}</p>
+  {% if include.detailed %}
+    <dl class="site-card-facts">
+      <div>
+        <dt>Problem</dt>
+        <dd>{{ p.problem }}</dd>
+      </div>
+      <div>
+        <dt>My role</dt>
+        <dd>{{ p.role }}</dd>
+      </div>
+      <div>
+        <dt>Key contribution</dt>
+        <dd>{{ p.contribution }}</dd>
+      </div>
+      <div>
+        <dt>Outcome</dt>
+        <dd>{{ p.outcome }}</dd>
+      </div>
+    </dl>
+  {% endif %}
+  {% if p.tech %}
+    <ul class="site-tags" aria-label="Methods and tools">
+      {% for t in p.tech limit: 5 %}
+        <li>{{ t }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  <p class="site-card-link">
+    <a href="{{ p.url | relative_url }}">Read the case study <span aria-hidden="true">&rarr;</span></a>
+  </p>
+</article>

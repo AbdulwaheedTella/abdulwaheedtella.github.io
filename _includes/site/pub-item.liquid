@@ -1,0 +1,60 @@
+{%- comment -%}
+  One publication. Params: pub (an entry of site.data.publications.published), compact (optional, hides the year column).
+  The data-* attributes drive the filters on the publications page.
+{%- endcomment -%}
+{% assign pub = include.pub %}
+<li
+  class="site-pub{% if include.compact %} site-pub-compact{% endif %}"
+  data-year="{{ pub.year }}"
+  data-type="{{ pub.type }}"
+  data-topics="{{ pub.topics | join: ' ' }}"
+  data-text="{{ pub.title | append: ' ' | append: pub.authors | append: ' ' | append: pub.venue | strip_html | downcase | escape }}"
+>
+  {% unless include.compact -%}
+    <span class="site-pub-year">{{ pub.year }}</span>
+  {%- endunless %}
+  <div class="site-pub-body">
+    <p class="site-pub-title">
+      {% if pub.doi -%}
+        <a href="https://doi.org/{{ pub.doi }}" rel="noopener">{{ pub.title }}</a>
+      {%- else -%}
+        {{- pub.title -}}
+      {%- endif %}
+    </p>
+    <p class="site-pub-authors">
+      {{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' -}}
+      {%- if pub.corresponding %}
+        <abbr title="Corresponding author">(corresponding)</abbr>
+      {%- endif %}
+    </p>
+    <p class="site-pub-venue">
+      <em>{{ pub.venue }}</em>
+      {%- if pub.detail %}, {{ pub.detail }}{% endif -%}
+      {%- if include.compact %} ({{ pub.year }}){% endif %}
+    </p>
+    <p class="site-pub-meta">
+      <span class="site-badge">{{ site.data.publications.types[pub.type] }}</span>
+      {% if pub.quartile -%}
+        <span class="site-badge">{{ pub.quartile }}</span>
+      {%- endif %}
+      {% if pub.note -%}
+        <span class="site-pub-note">{{ pub.note }}</span>
+      {%- endif %}
+    </p>
+    <p class="site-pub-links">
+      {% if pub.doi -%}
+        <a href="https://doi.org/{{ pub.doi }}" rel="noopener">DOI</a>
+      {%- endif %}
+      <a href="https://scholar.google.com/scholar?q={{ pub.title | strip_html | url_encode }}" rel="noopener">Google Scholar</a>
+      {% if pub.code -%}
+        <a href="{{ pub.code }}" rel="noopener">Code</a>
+      {%- endif %}
+      {% if pub.dataset -%}
+        <a href="{{ pub.dataset }}" rel="noopener">Dataset</a>
+      {%- endif %}
+      {% if pub.project and include.compact != true %}
+        <a href="{{ '/projects/' | append: pub.project | append: '/' | relative_url }}">Project</a>
+      {% endif %}
+    </p>
+  </div>
+</li>
