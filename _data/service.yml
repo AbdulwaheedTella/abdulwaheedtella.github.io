@@ -1,0 +1,64 @@
+# Teaching, supervision, service, grants and recognition. From the CV (Sept 2026).
+teaching:
+  - role: Teaching Assistant, Civil Engineering
+    org: Monash University Malaysia
+    dates: "2023 to present"
+    note: Assessment design and practical ArcGIS Pro sessions. Letters of Commendation for Teaching Excellence in 2024 and 2025.
+  - role: Teaching Assistant, GIS for Civil Engineers
+    org: Universiti Teknologi PETRONAS
+    dates: "2019 to 2021"
+    note: Hands-on ArcGIS and QGIS sessions and interactive tutorials applying geospatial technology to engineering problems.
+  - role: Instructor, Geomatics
+    org: Universiti Teknologi PETRONAS
+    dates: "2019 to 2021"
+    note: Lectures and field practicals on surveying and GPS.
+supervision:
+  - role: Graduate Mentor, final-year projects
+    org: Monash University Malaysia
+    dates: "2024 to 2025"
+    note: Mentored undergraduates on research design and spatial data analysis. One supervised project on the impacts of historical and projected land-use change on flooding won the Best Presentation Award.
+  - role: Graduate Mentor, final-year projects
+    org: Universiti Teknologi PETRONAS
+    dates: "2019 to 2021"
+    note: Supervised six undergraduate theses on forest-fire prediction, erosion mapping and flood-risk assessment using machine learning and AHP.
+  - role: Research assistant supervision
+    org: APNIC Foundation
+    dates: "2025 to 2026"
+    note: Supervised two research assistants on a multi-country, mixed-methods study.
+service:
+  - title: Peer reviewer
+    note: Over 25 reviews for indexed journals, including npj Urban Sustainability, Scientific Reports, Artificial Intelligence Review, Earth Science Informatics, Building Simulation, Environment Development and Sustainability, Environmental Science and Technology, International Journal of Environmental Science and Technology, and Journal of Cleaner Production.
+  - title: Editorial board member
+    note: The Global Journal of Earth Science and Engineering (GJESE), 2024 to present.
+  - title: Expert panellist
+    note: "International Higher Education Policy Dialogue, March 2026: Policy Making Under Rapid Emergence, co-organised by Liverpool John Moores University, The British Academy, Lao Hong University, Prince of Songkla University and University of the Philippines Cebu. Addressed institutional challenges in adopting AI and evidence-based strategies for responsible AI integration."
+  - title: Workshop instructor
+    note: "Machine Learning for Flood Susceptibility Mapping using Google Earth Engine, for Africans in Environmental Science, January 2026 (early-career African researchers)."
+  - title: Editor-in-Chief
+    note: Say Yes N' Collaborate (SYNC) Magazine, Monash University, 2024 to 2025.
+grants:
+  - title: APNIC Foundation Research Fellowship, Principal Investigator
+    detail: "2025. Mapping AI Capability Disparities Across ASEAN: Towards a Regional Policy Roadmap. USD 10,000."
+  - title: PhD Global Mobility Grant, Monash University
+    detail: "2025. USD 4,276."
+  - title: MONASH PITCH 2026 Fellowship
+    detail: AUD 2,500.
+  - title: Conference grant (full sponsorship), 14th Saudi GIS Symposium
+    detail: "2020."
+awards:
+  - { year: "2025", title: Letter of Commendation for Teaching Excellence, Monash University Malaysia }
+  - { year: "2024", title: Letter of Commendation for Teaching Excellence, Monash University Malaysia }
+  - { year: "2024", title: Best Student Paper Award, IEEE Geoscience and Remote Sensing Symposium }
+  - { year: "2023 to 2027", title: Graduate Research Excellence Scholarship, Monash University }
+  - { year: "2019 to 2021", title: Graduate Assistantship Scholarship, Universiti Teknologi PETRONAS }
+  - { year: "2021", title: Academic Excellence Award (Civil Engineering) and GA Merit Award, Universiti Teknologi PETRONAS }
+credentials:
+  registrations:
+    - Professional Technologist (Ts.), Malaysia Board of Technologists (MBOT), 2025
+    - Associate Professional Member and Geospatialist (Gs.), Institution of Geospatial and Remote Sensing Malaysia (IGRSM), 2026
+  certifications:
+    - IBM Data Analyst Professional Certificate (IBM, 2024)
+    - SQL for Data Science (UC Davis, 2021)
+    - Python and Network Bootcamp (ShapeAI, 2021)
+    - "NASA: Satellite Remote Sensing for Urban Heat Islands (2020)"
+  memberships: [IEEE Geoscience and Remote Sensing Society, American Society of Civil Engineers, IGRSM, ISPRS, IAHR]

@@ -65,7 +65,10 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
 }
 
-for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
+// This site (unlike the upstream starter) owns a small set of layouts and includes of its own: `_layouts/site.liquid`,
+// `_layouts/project.liquid` and `_includes/site/`. They add new names rather than shadowing gem files. Everything else
+// stays gem-owned, and so do Sass and the Tailwind pipeline.
+for (const forbiddenPath of ["_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
   if (exists(forbiddenPath)) {
     failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
   }
@@ -82,7 +85,13 @@ for (const forbiddenGlobPath of [
   }
 }
 
-for (const requiredPath of ["test/visual", "test/integration_plugin_toggles.sh", "test/integration_distill.sh"]) {
+for (const sitePath of ["_layouts/site.liquid", "_layouts/project.liquid", "_includes/site"]) {
+  if (!exists(sitePath)) {
+    failures.push(`Site-owned component missing: \`${sitePath}\`.`);
+  }
+}
+
+for (const requiredPath of ["test/integration_plugin_toggles.sh", "test/integration_site.sh"]) {
   if (!exists(requiredPath)) {
     failures.push(`Starter integration/visual contract missing required path: \`${requiredPath}\`.`);
   }

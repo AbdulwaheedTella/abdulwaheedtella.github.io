@@ -1,0 +1,84 @@
+# Positions, newest first. `kind` is one of: research | academic | industry (used for the small label on the timeline).
+# Text is adapted from the CV for the web; dates are as given on the CV.
+positions:
+  - role: PhD Intern, Research Excellence Unit
+    org: Monash University Malaysia
+    dates: "2026"
+    kind: academic
+    summary: Institutional research strategy and research data governance.
+    points:
+      - Contributing to research strategy through community engagement and research data governance working groups.
+      - Working across faculties on research policy and open-science frameworks.
+
+  - role: Research Fellow and Principal Investigator
+    org: APNIC Foundation
+    place: Australia
+    dates: "Nov 2025 to Apr 2026"
+    kind: research
+    summary: "Mapping AI Capability Disparities Across ASEAN: Towards a Regional Policy Roadmap."
+    points:
+      - Led a multi-country study of AI and digital-technology capability gaps across Asia-Pacific institutions, linking geospatial analytics with AI governance and digital infrastructure policy.
+      - Investigated institutional barriers to AI adoption and proposed evidence-based capacity-building strategies.
+      - Supervised two research assistants in mixed-methods data collection and analysis.
+      - Funded by an APNIC Foundation research fellowship (USD 10,000).
+    project: ai-capability-asean
+
+  - role: Visiting Research Associate
+    org: Curtin University, School of Design and Environment
+    place: Australia
+    dates: "Nov 2025 to Jan 2026"
+    kind: research
+    summary: GeoAI for flood susceptibility mapping, focused on when model predictions can be trusted.
+    points:
+      - Evaluated model reliability and identified the areas where machine-learning predictions are likely to fail, to improve their spatial validity.
+    project: reliable-geoai-area-of-applicability
+
+  - role: Doctoral Researcher, Civil Engineering
+    org: Monash University Malaysia
+    dates: "2023 to present"
+    kind: academic
+    summary: Explainable GeoAI for disaster risk reduction and environmental resilience, aligned with the Sustainable Development Goals.
+    points:
+      - Developing explainable-AI frameworks using SHAP, LIME and Accumulated Local Effects to make model reasoning transparent to non-technical stakeholders and policymakers.
+      - Working with Google Earth Engine, Python, deep learning and statistical methods on complex multi-source geospatial data.
+      - Best Student Paper Award, IEEE Geoscience and Remote Sensing Symposium, 2024.
+    project: explainable-geoai-flood-susceptibility
+
+  - role: Graduate Research Assistant
+    org: Universiti Teknologi PETRONAS, Geospatial Analysis and Modelling (GAM) Research Group
+    place: Malaysia
+    dates: "2019 to 2021"
+    kind: academic
+    summary: Machine-learning and geostatistical modelling of air quality and climate impacts.
+    points:
+      - Built predictive models of how climate change affects air-pollution concentrations, including XGBoost, random forest, naïve Bayes, K-nearest neighbours and support vector regression for PM10 forecasting.
+      - Applied kriging, IDW and multivariate regression to spatiotemporal air-quality modelling.
+      - Published four Q1 journal articles during the research assistantship and secured a full conference travel grant.
+    project: air-quality-machine-learning-malaysia
+
+  - role: Rhodium Research Cloud Scientist
+    org: Foresight Institute of Research and Translation (FIRAT)
+    place: Nigeria
+    dates: "2018 to 2022"
+    kind: research
+    summary: Environmental sustainability research and academic outreach (volunteer research scientist).
+    points:
+      - Contributed to environmental sustainability research and publication development, and presented findings at national and international conferences.
+      - Organised the institute's first undergraduate research conference and led the planning of new content for the institute website.
+
+  - role: Data Analyst Intern
+    org: Shape AI
+    dates: "Jul to Oct 2021"
+    kind: industry
+    summary: Data analysis and machine learning in an industry setting.
+    points:
+      - Worked on SQL-based analysis, data wrangling, machine learning and deep learning using Python, pandas, NumPy, Matplotlib, Seaborn, GitHub and applied statistics.
+
+  - role: Geospatial Analyst Intern
+    org: Aerial-View Solution International
+    place: Nigeria
+    dates: "Mar to Aug 2016"
+    kind: industry
+    summary: Analysis of high-resolution satellite imagery.
+    points:
+      - Performed geospatial analysis and vectorisation on high-resolution imagery (WorldView, QuickBird) and developed the company website.

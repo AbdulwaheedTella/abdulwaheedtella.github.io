@@ -1,0 +1,59 @@
+# Skills grouped by meaning, not by logo. Everything here appears on the CV.
+- group: Research areas
+  items:
+    [
+      Geospatial AI,
+      Explainable AI,
+      Model reliability and transferability,
+      Flood susceptibility,
+      Urban heat,
+      Air quality,
+      Earth observation,
+      Decision support,
+    ]
+- group: Machine learning and AI
+  items:
+    [
+      Deep learning (ANN,
+      CNN,
+      DNN),
+      Random forest and XGBoost,
+      Support vector regression,
+      K-nearest neighbours,
+      Naïve Bayes,
+      Logistic and multivariate regression,
+      SHAP,
+      LIME and ALE,
+      Uncertainty analysis,
+      Sensitivity analysis,
+    ]
+- group: Programming and data
+  items:
+    [
+      Python (scikit-learn,
+      TensorFlow,
+      Keras,
+      pandas,
+      NumPy),
+      R,
+      SQL,
+      Jupyter and reproducible workflows,
+      GitHub,
+      Excel and IBM Cognos dashboards,
+      Matplotlib and Seaborn,
+    ]
+- group: Geospatial and remote sensing
+  items:
+    [
+      Google Earth Engine,
+      ArcGIS Pro and ArcGIS Online,
+      QGIS,
+      Satellite image processing,
+      Land use and land cover change,
+      Land surface temperature,
+      Kriging and IDW,
+      Exposure and vulnerability mapping,
+    ]
+- group: Research methods
+  items:
+    [Multi-criteria decision analysis, Spatiotemporal modelling, Multivariate statistics, Model validation, Systematic review, Mixed-methods research]

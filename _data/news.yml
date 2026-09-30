@@ -1,0 +1,86 @@
+# News and updates. To add an entry, add a block anywhere in this file (order does not matter; the site sorts by date).
+#
+#   - date: 2026-10-05          # YYYY-MM-DD. Use the 1st of the month or January 1st when only the month or year is known.
+#     precision: day            # day | month | year  (controls how the date is displayed)
+#     type: publication         # publication | talk | award | appointment | grant | milestone | release
+#     text: One or two sentences. Plain text or inline Markdown (links are fine).
+#     link: https://...         # optional; turns the entry into a link
+#     link_label: Read the paper # optional label for the link
+#     featured: true            # optional; featured entries are preferred on the home page
+#
+# Only add facts you can point to. Dates are shown exactly as precisely as `precision` says.
+
+- date: 2026-09-01
+  precision: month
+  type: milestone
+  text: Google Scholar now shows 1,000+ citations and an h-index of 13 (as reported on my September 2026 CV).
+  link: https://scholar.google.com/citations?user=VNYbr6cAAAAJ&hl=en
+  link_label: Google Scholar profile
+
+- date: 2026-04-01
+  precision: month
+  type: grant
+  text: Completed the APNIC Foundation research fellowship on AI capability disparities across ASEAN. The accompanying systematic review is under review at Humanities and Social Sciences Communications.
+  featured: true
+
+- date: 2026-03-01
+  precision: month
+  type: talk
+  text: Expert panellist at the International Higher Education Policy Dialogue on policy making under rapid emergence, speaking on institutional challenges in adopting AI and evidence-based strategies for responsible AI integration.
+  featured: true
+
+- date: 2026-02-01
+  precision: year
+  type: publication
+  text: "Paper published in *Sustainable Development* (Q1, WoS Development Studies rank 1/65): an explainable GeoAI framework for flood susceptibility and urban exposure assessment."
+  link: https://doi.org/10.1002/sd.7077
+  link_label: DOI
+  featured: true
+
+- date: 2026-01-20
+  precision: month
+  type: talk
+  text: Delivered a hands-on workshop on machine learning for flood susceptibility mapping in Google Earth Engine for early-career researchers with Africans in Environmental Science.
+
+- date: 2026-01-10
+  precision: year
+  type: publication
+  text: "Paper published in *Water Resources Management*: flood susceptibility mapping with explainable AI, a novel application of accumulated local effects (ALE)."
+  link: https://doi.org/10.1007/s11269-025-04430-0
+  link_label: DOI
+
+- date: 2026-01-01
+  precision: year
+  type: appointment
+  text: Started as PhD Intern in the Research Excellence Unit at Monash University Malaysia, working on research data governance and open-science frameworks.
+
+- date: 2025-11-01
+  precision: month
+  type: appointment
+  text: Began a visiting research associate placement at Curtin University (School of Design and Environment), studying the area of applicability of machine-learning flood susceptibility models.
+  featured: true
+
+- date: 2025-06-01
+  precision: year
+  type: publication
+  text: "Paper published in *Earth Systems and Environment*: an explainable GeoAI approach to two decades of urban flood dynamics and land-cover change."
+  link: https://doi.org/10.1007/s41748-025-00878-7
+  link_label: DOI
+
+- date: 2025-05-01
+  precision: year
+  type: publication
+  text: "Co-authored a chapter on Google Earth Engine and artificial intelligence for the SDGs in the Elsevier volume *Google Earth Engine and Artificial Intelligence for Earth Observation*."
+  link: https://doi.org/10.1016/B978-0-443-27372-8.00014-3
+  link_label: DOI
+
+- date: 2025-04-01
+  precision: year
+  type: appointment
+  text: Registered as a Professional Technologist (Ts.) with the Malaysia Board of Technologists (MBOT).
+
+- date: 2024-07-01
+  precision: year
+  type: award
+  text: Best Student Paper Award at the IEEE Geoscience and Remote Sensing Symposium.
+  featured: true

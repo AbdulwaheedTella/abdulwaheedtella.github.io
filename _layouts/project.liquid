@@ -1,0 +1,140 @@
+---
+layout: site
+hide_header: true
+---
+{%- comment -%}
+  Project detail page. Everything above the body comes from front matter of the file in _projects/.
+  Fields: title, summary, status, period, role, problem, tech, contribution, outcome, pipeline, publications (ids),
+  in_progress, related (slugs), links ({label, url}).
+{%- endcomment -%}
+{% assign pubs_data = site.data.publications.published %}
+<article class="site-project">
+  <nav class="site-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">Projects</a>
+    <span aria-hidden="true">/</span>
+    <span>{{ page.title }}</span>
+  </nav>
+  <header class="site-header">
+    <p class="site-eyebrow">
+      Case study{% if page.status %} &middot; {{ page.status }}{% endif %}
+    </p>
+    <h1 class="site-title">{{ page.title }}</h1>
+    <p class="site-lede">{{ page.summary }}</p>
+  </header>
+
+  <dl class="site-facts">
+    {% if page.problem %}
+      <div class="site-fact site-fact-wide">
+        <dt>Problem</dt>
+        <dd>{{ page.problem }}</dd>
+      </div>
+    {% endif %}
+    {% if page.role %}
+      <div class="site-fact">
+        <dt>My role</dt>
+        <dd>{{ page.role }}</dd>
+      </div>
+    {% endif %}
+    {% if page.period %}
+      <div class="site-fact">
+        <dt>Period</dt>
+        <dd>{{ page.period }}</dd>
+      </div>
+    {% endif %}
+    {% if page.contribution %}
+      <div class="site-fact site-fact-wide">
+        <dt>Key contribution</dt>
+        <dd>{{ page.contribution }}</dd>
+      </div>
+    {% endif %}
+    {% if page.outcome %}
+      <div class="site-fact site-fact-wide">
+        <dt>Outcome</dt>
+        <dd>{{ page.outcome }}</dd>
+      </div>
+    {% endif %}
+    {% if page.tech %}
+      <div class="site-fact site-fact-wide">
+        <dt>Methods and tools</dt>
+        <dd>
+          <ul class="site-tags">
+            {% for t in page.tech %}
+              <li>{{ t }}</li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </div>
+    {% endif %}
+  </dl>
+
+  {% if page.pipeline %}
+    <section aria-labelledby="pipeline-h" class="site-section">
+      <h2 id="pipeline-h" class="site-h2">How the work flows</h2>
+      <ol class="site-pipeline">
+        {% for step in page.pipeline %}
+          <li>
+            <span class="site-pipeline-n" aria-hidden="true">{{ forloop.index }}</span>
+            <strong>{{ step.label }}</strong>
+            <span>{{ step.detail }}</span>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+  {% endif %}
+
+  <div class="site-prose">{{ content }}</div>
+
+  {% if page.publications %}
+    <section aria-labelledby="pubs-h" class="site-section">
+      <h2 id="pubs-h" class="site-h2">Publications</h2>
+      <ol class="site-pubs">
+        {% for pid in page.publications %}
+          {% assign pub = pubs_data | where: 'id', pid | first %}
+          {% if pub %}{% include site/pub-item.liquid pub=pub compact=true %}{% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+  {% endif %}
+
+  {% if page.in_progress %}
+    <section aria-labelledby="ip-h" class="site-section">
+      <h2 id="ip-h" class="site-h2">Under review or in preparation</h2>
+      <ul class="site-plain-list">
+        {% for t in page.in_progress %}
+          <li>{{ t }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.links %}
+    <section aria-labelledby="links-h" class="site-section">
+      <h2 id="links-h" class="site-h2">Links</h2>
+      <ul class="site-plain-list">
+        {% for l in page.links %}
+          <li>
+            <a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.related %}
+    <section aria-labelledby="rel-h" class="site-section">
+      <h2 id="rel-h" class="site-h2">Related work</h2>
+      <ul class="site-plain-list">
+        {% for slug in page.related %}
+          {% assign rp = site.projects | where: 'slug', slug | first %}
+          {% if rp %}
+            <li>
+              <a href="{{ rp.url | relative_url }}">{{ rp.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  <p class="site-back"><a href="{{ '/projects/' | relative_url }}">&larr; All projects</a></p>
+</article>

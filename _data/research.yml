@@ -1,0 +1,67 @@
+# Research themes. `plain` is the one-sentence version for non-specialists; `pubs` are publication ids from publications.yml;
+# `projects` are slugs of pages in _projects/.
+- slug: explainable-and-reliable-ai
+  title: Explainable and reliable GeoAI
+  plain: Machine-learning hazard maps are only useful if you can see why they say what they say, and know where they stop being right.
+  summary: >-
+    I compare machine-learning and deep-learning models for spatial prediction, explain them with SHAP, LIME and Accumulated Local Effects
+    (including the first application of ALE to environmental susceptibility modelling), and test
+    model transferability using the area of applicability, so that predictions outside the training conditions are flagged instead of trusted.
+  methods: [SHAP, LIME, Accumulated Local Effects, Area of applicability, Uncertainty quantification]
+  pubs: [J16, J15]
+  pending: [Toward Reliable GeoAI for Flood Susceptibility Mapping]
+  projects: [explainable-geoai-flood-susceptibility, reliable-geoai-area-of-applicability]
+
+- slug: flood-and-hazard-risk
+  title: Flood and hazard risk modelling
+  plain: Finding which places are most likely to flood or slide, and what sits in harm's way.
+  summary: >-
+    Flood susceptibility mapping with ensemble, fuzzy and deep-learning models across Nigerian and Malaysian cities, extended from
+    "where is risk high" to "what is exposed" by linking hazard surfaces to buildings, land use and population. Related work covers
+    landslide proneness along a highway corridor and sea-level-rise estimation.
+  methods: [ANN, CNN, DNN, Random forest, XGBoost, SVR, Fuzzy MCDM]
+  pubs: [J16, J15, J14, J10, J9, J1, J2, C6]
+  projects: [explainable-geoai-flood-susceptibility, urban-flood-dynamics-earth-observation]
+
+- slug: earth-observation
+  title: Large-scale Earth observation
+  plain: Using decades of satellite images to measure how land, heat and air quality change.
+  summary: >-
+    Multi-temporal satellite analysis in Google Earth Engine: two decades of land-cover change linked statistically to shifting flood
+    risk, land-use dynamics in conflict-affected north-east Nigeria, and aerosol and land-cover relationships in Lagos.
+  methods: [Google Earth Engine, Landsat, Land-cover classification, Change detection]
+  pubs: [J14, J13, J11, BC2, C4, C3]
+  projects: [urban-flood-dynamics-earth-observation]
+
+- slug: urban-climate-and-heat
+  title: Urban climate and heat
+  plain: Understanding which people and neighbourhoods are most exposed to urban heat, and how well current methods capture it.
+  summary: >-
+    An empirical urban heat exposure study built entirely in Google Earth Engine (land surface temperature, vegetation indices and built-up
+    surface data for a rapidly urbanising region), plus a systematic review of urban heat vulnerability assessment with remote sensing and machine learning.
+    This is work in progress; the review is submitted and the empirical study is under development.
+  methods: [Thermal remote sensing, Land surface temperature, Vegetation indices, Systematic review]
+  pubs: [J3]
+  pending: [Urban Heat Vulnerability Assessment in the Machine Learning Era]
+  projects: [urban-heat-exposure-vulnerability]
+
+- slug: air-quality
+  title: Air quality and environmental monitoring
+  plain: Predicting and mapping air pollution from weather, land cover and monitoring-station data.
+  summary: >-
+    My master's work on PM10 and ozone in Malaysia: machine-learning, geostatistical and multivariate-regression models of pollutant
+    concentrations and their climatic drivers, plus remote-sensing aerosol work in Lagos.
+  methods: [Random forest, K-nearest neighbours, Naïve Bayes, SVR, Kriging, IDW, Multivariate regression]
+  pubs: [J4, J5, J6, J7, J11, C5]
+  projects: [air-quality-machine-learning-malaysia]
+
+- slug: decision-support-and-policy
+  title: Decision support and AI policy
+  plain: Turning model outputs, and questions about AI readiness, into choices that planners and policymakers can act on.
+  summary: >-
+    GIS-based multi-criteria decision analysis for landfill siting and highway landslide risk, and a policy-facing study of AI
+    capability gaps across ASEAN institutions, including a regional roadmap for closing them.
+  methods: [MCDM, GIS, Mixed-methods research, Policy analysis]
+  pubs: [J12, J10, J9, J1]
+  pending: [Artificial Intelligence Capability and Readiness in ASEAN]
+  projects: [spatial-decision-support-mcdm, ai-capability-asean]

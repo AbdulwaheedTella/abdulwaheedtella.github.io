@@ -1,14 +1,19 @@
-github_users:
-  - torvalds
-  - alshedivat
-
-repo_description_lines_max: 2
-
-github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+# Public GitHub repositories worth showing, as a snapshot of GitHub metadata (language, stars, last update).
+# Update by hand when something changes. Research code for the papers on this site is currently in private repositories and is not listed.
+profile: https://github.com/AbdulwaheedTella
+repos:
+  - name: IBM-DATA-ANALYTICS-CAPSTONE-PROJECT
+    description: Capstone project from the IBM Data Analyst Professional Certificate.
+    language: Jupyter Notebook
+    stars: 0
+    updated: 2024-01-26
+  - name: Analyzing-stock-performance-and-building-a-dashboard
+    description: Stock-performance analysis and dashboard built in Python and Jupyter.
+    language: Jupyter Notebook
+    stars: 0
+    updated: 2023-09-15
+  - name: abdulwaheedtella.github.io
+    description: Source of this website (Jekyll and al-folio), with all content held in data files.
+    language: HTML
+    stars: 0
+    updated: 2026-09-30

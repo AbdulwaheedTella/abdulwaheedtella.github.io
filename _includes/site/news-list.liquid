@@ -1,0 +1,35 @@
+{%- comment -%}
+  News entries from _data/news.yml, newest first. Params: limit (optional number), featured (true = featured entries only).
+{%- endcomment -%}
+{% assign items = site.data.news | sort: 'date' | reverse %}
+{% if include.featured %}
+  {% assign items = items | where: 'featured', true %}
+{% endif %}
+<ul class="site-news">
+  {% for n in items limit: include.limit %}
+    <li>
+      <p class="site-news-date">
+        <time datetime="{{ n.date | date: '%Y-%m-%d' }}">
+          {%- case n.precision -%}
+            {%- when 'day' -%}
+              {{ n.date | date: '%-d %b %Y' }}
+            {%- when 'month' -%}
+              {{ n.date | date: '%b %Y' }}
+            {%- else -%}
+              {{ n.date | date: '%Y' }}
+          {%- endcase -%}
+        </time>
+        <span class="site-badge">{{ n.type | capitalize }}</span>
+      </p>
+      <p class="site-news-text">
+        {{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}
+        {% if n.link -%}
+          <a href="{{ n.link }}" rel="noopener">
+            {{- n.link_label | default: 'Link' -}}
+            <span class="sr-only"> (opens external site)</span></a
+          >
+        {%- endif %}
+      </p>
+    </li>
+  {% endfor %}
+</ul>

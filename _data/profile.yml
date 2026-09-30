@@ -1,0 +1,57 @@
+# Single source of truth for identity, positioning and headline numbers.
+# Everything here is taken from the CV (Sept 2026) unless noted.
+name: Abdulwaheed Tella
+post_nominals: "Gs., Ts."
+headline: GeoAI researcher building explainable, transferable machine learning from satellite and geospatial data
+positioning: >-
+  I develop and stress-test machine-learning models for flood risk, urban heat and environmental monitoring, and I work on turning
+  their outputs into something planners, engineers and policymakers can use and trust.
+current_roles:
+  - PhD candidate, Civil Engineering (GeoAI and flood modelling), Monash University Malaysia
+  - PhD Intern, Research Excellence Unit, Monash University Malaysia (2026)
+  - Registered Professional Technologist (MBOT) and Geospatialist (IGRSM)
+location: Selangor, Malaysia
+photo: /assets/img/prof_pic.jpg
+photo_alt: Portrait of Abdulwaheed Tella
+expertise:
+  - Geospatial machine learning and deep learning
+  - Explainable AI and model reliability
+  - Earth observation with Google Earth Engine
+  - Urban climate and flood risk
+  - Decision support and AI policy research
+# Headline numbers. Citation figures are from Google Scholar as reported on the CV.
+stats:
+  - value: "16"
+    label: Journal articles
+    note: Peer-reviewed, the majority in Q1 journals
+  - value: "1,000+"
+    label: Citations
+    note: Google Scholar, September 2026
+  - value: "13"
+    label: h-index
+    note: Google Scholar, September 2026
+  - value: "25+"
+    label: Peer reviews
+    note: For indexed journals
+about:
+  - >-
+    I am a PhD candidate in the Department of Civil Engineering at Monash University Malaysia, working on geospatial artificial intelligence
+    (GeoAI) for flood susceptibility and urban exposure. My first degree is in remote sensing and GIS (FUTA, Nigeria) and my master's is in
+    civil and environmental engineering (Universiti Teknologi PETRONAS), where I modelled air pollution in Malaysia with machine learning.
+  - >-
+    The problem I keep returning to is trust. Machine-learning hazard maps can look convincing and still fail outside the conditions they
+    were trained on. My work benchmarks deep-learning and ensemble models, explains them with SHAP, LIME and Accumulated Local Effects, and
+    measures where their predictions stop being reliable, including an area-of-applicability study during a research placement at Curtin University.
+  - >-
+    Alongside the modelling I work on the step after prediction: linking hazard surfaces to buildings, land use and population, and using
+    multi-criteria decision analysis for siting and corridor risk. As Principal Investigator on an APNIC Foundation fellowship (Nov 2025 to Apr 2026) I
+    led a multi-country study of AI capability gaps across ASEAN, which connects geospatial analytics with digital infrastructure policy.
+  - >-
+    On the applied side I hold an IBM Data Analyst certificate, have worked as a data analyst intern (SQL, Python, applied statistics) and a
+    geospatial analyst intern (high-resolution imagery), and I am registered as a Professional Technologist with the Malaysia Board of Technologists.
+current_focus:
+  - Finishing the PhD (final milestone November 2026) on explainable and reliable GeoAI for flood susceptibility and urban exposure
+  - An empirical urban heat exposure study built entirely in Google Earth Engine, and a systematic review of urban heat vulnerability assessment
+  - Publishing the APNIC Foundation study on AI capability disparities across ASEAN (manuscript under review)
+# Public CV PDF. Put the file at this path and the CV page shows a download button; until then it offers a request-by-email note.
+cv_pdf: /assets/pdf/Abdulwaheed_Tella_CV.pdf
