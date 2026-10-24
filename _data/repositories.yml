@@ -1,5 +1,5 @@
 # Public GitHub repositories worth showing, as a snapshot of GitHub metadata (language, stars, last update).
-# Update by hand when something changes. Research code for the papers on this site is currently in private repositories and is not listed.
+# Update by hand when something changes. Research code for the papers is archived on Zenodo (_data/software.yml).
 profile: https://github.com/AbdulwaheedTella
 repos:
   - name: IBM-DATA-ANALYTICS-CAPSTONE-PROJECT

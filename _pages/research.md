@@ -65,7 +65,7 @@ description: Research themes of Abdulwaheed Tella covering explainable and relia
 {% endfor %}
 
 <p class="site-note">
-  Code and datasets: the research code is currently in private repositories. See also my
+  Code and data: research code is archived on Zenodo with citable DOIs (see <a href="{{ '/projects/#code' | relative_url }}">Projects</a>). See also my
   <a href="{{ site.data.publications.scholar_url }}" rel="noopener">Google Scholar profile</a> and
   <a href="{{ site.data.publications.orcid_url }}" rel="noopener">ORCID record</a>.
 </p>

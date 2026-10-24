@@ -21,7 +21,7 @@ description: Publications by Abdulwaheed Tella on explainable GeoAI, flood susce
   <a href="{{ site.data.publications.orcid_url }}" rel="noopener">ORCID<span class="sr-only"> (opens external site)</span></a>
 </p>
 <p class="site-note">
-  Citation figures on Google Scholar (1,000+ citations, h-index 13, as of September 2026) are reported on my CV. Numbers (J = journal, BC = book chapter, C = conference) match my CV. Titles link to the publisher via DOI.
+  Google Scholar shows 1,080+ citations, an h-index of 15 and an i10-index of 16 (October 2026). Numbers (J = journal, BC = book chapter, C = conference) match my CV. Titles link to the publisher via DOI.
 </p>
 
 <section class="site-featured" aria-labelledby="sel-h">

@@ -1195,3 +1195,55 @@ html[data-theme="dark"] .site-tile-art {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* ---------- Talks and events ---------- */
+.site-event-list {
+  list-style: none;
+  padding: 0;
+}
+.site-event {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--site-line);
+}
+.site-event.has-photo {
+  grid-template-columns: 16rem minmax(0, 1fr);
+}
+.site-event-photos {
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.site-event-photos img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.site-event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--site-muted);
+  margin-bottom: 0.35rem !important;
+}
+.site-event-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 0.2rem;
+}
+.site-event-event {
+  font-style: italic;
+  margin-bottom: 0.4rem !important;
+}
+@media (max-width: 640px) {
+  .site-event.has-photo {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

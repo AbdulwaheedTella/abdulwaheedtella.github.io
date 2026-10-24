@@ -16,6 +16,12 @@ description: Selected GeoAI, Earth observation and decision-support projects by 
   {% for pr in projects %}{% include site/project-card.liquid project=pr detailed=true %}{% endfor %}
 </div>
 
+<section class="site-section" id="code" aria-labelledby="code-h">
+  <h2 id="code-h" class="site-h2">Research code and data</h2>
+  <p class="site-note">Archived on Zenodo with citable DOIs, so results can be reproduced and reused.</p>
+  {% include site/software-list.liquid %}
+</section>
+
 <section class="site-section" aria-labelledby="gh-h">
   <div class="site-section-head">
     <h2 id="gh-h" class="site-h2">Code on GitHub</h2>
