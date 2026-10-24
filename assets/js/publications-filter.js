@@ -22,6 +22,10 @@
       li.hidden = !ok;
       if (ok) shown += 1;
     });
+    // Hide a year heading when none of its entries match.
+    list.querySelectorAll("[data-year-group]").forEach(function (g) {
+      g.hidden = !g.querySelector(".site-pub:not([hidden])");
+    });
     count.textContent = "Showing " + shown + " of " + items.length;
     empty.hidden = shown !== 0;
   }

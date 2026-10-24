@@ -3,7 +3,7 @@ layout: site
 permalink: /cv/
 title: CV
 nav: true
-nav_order: 7
+nav_order: 6
 eyebrow: Curriculum vitae
 heading: CV
 lede: A web summary of the essentials. The full CV has the complete publication list, teaching record and referees.
@@ -29,7 +29,7 @@ description: Curriculum vitae of Abdulwaheed Tella, GeoAI researcher and PhD can
   <p class="site-prose site-prose-narrow">
     GeoAI researcher applying machine learning and deep learning to large-scale Earth observation data for environmental prediction and decision support.
     PhD candidate in Civil Engineering at Monash University Malaysia. Author of 16 peer-reviewed journal articles, 2 book chapters and 6 conference papers,
-    with 1,000+ citations and an h-index of 13, the majority in Q1 journals. Teaching experience across three institutions, including two commendations for
+    with 1,080+ citations and an h-index of 15 (Google Scholar, October 2026), the majority in Q1 journals. Teaching experience across three institutions, including two commendations for
     teaching excellence at Monash, and supervision of seven undergraduate research projects.
   </p>
 </section>

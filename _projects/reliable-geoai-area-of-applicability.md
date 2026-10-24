@@ -3,6 +3,8 @@ title: Reliable GeoAI with the area of applicability
 description: Testing where machine-learning flood susceptibility predictions can be trusted, using the area of applicability to flag predictions made outside the conditions a model was trained on.
 summary: Identifies the feature-space and geographic conditions under which flood susceptibility predictions become unreliable, so maps can show where not to trust them.
 featured: true
+art: grid
+short_title: Reliable GeoAI (area of applicability)
 order: 2
 theme: explainable-and-reliable-ai
 status: Manuscripts under review

@@ -1,0 +1,39 @@
+# Research code and data archived on Zenodo (each has a citable DOI). Checked against the Zenodo records in October 2026.
+# access: open | restricted. Restricted records show their description publicly; files are available on request through Zenodo.
+- title: 'Code for "Advancing Flood Susceptibility Mapping with Explainable AI: A Novel Application of Accumulated Local Effects (ALE)"'
+  doi: 10.5281/zenodo.15398120
+  year: 2025
+  access: open
+  license: CC BY 4.0
+  description: Logistic regression, random forest and XGBoost flood susceptibility models with ALE interpretation, as a Jupyter notebook.
+  paper: J15
+  project: explainable-geoai-flood-susceptibility
+- title: A Benchmark Codebase for Explainable Flood Susceptibility Mapping Using Machine Learning and Accumulated Local Effects
+  doi: 10.5281/zenodo.16276046
+  year: 2025
+  access: open
+  license: CC BY 4.0
+  description: Reusable benchmark for flood susceptibility modelling with random forest, XGBoost, CatBoost, Extra Trees and LightGBM, explained with ALE.
+  project: explainable-geoai-flood-susceptibility
+- title: Accumulated Local Effects for Flood Susceptibility (v1.0)
+  doi: 10.5281/zenodo.16352159
+  year: 2025
+  access: open
+  license: MIT
+  description: Reproducible notebook workflow for ensemble flood susceptibility models with AUC, precision, recall and F1 evaluation and ALE plots.
+  project: explainable-geoai-flood-susceptibility
+- title: 'Code for "Uncovering Spatiotemporal Urban Flood Dynamics: An Explainable GeoAI Approach to Land Cover Change Over Two Decades"'
+  doi: 10.5281/zenodo.15371226
+  year: 2025
+  access: restricted
+  license: CC BY 4.0
+  description: Random forest and logistic regression models with SHAP for linking land-use change to flood susceptibility over time.
+  paper: J14
+  project: urban-flood-dynamics-earth-observation
+- title: Area of Applicability (AoA) for Flood Susceptibility Mapping, Analysis Code
+  doi: 10.5281/zenodo.22225372
+  year: 2026
+  access: restricted
+  license: MIT
+  description: Importance-weighted dissimilarity index and model-specific area of applicability for random forest, XGBoost and CatBoost in Kuala Lumpur.
+  project: reliable-geoai-area-of-applicability

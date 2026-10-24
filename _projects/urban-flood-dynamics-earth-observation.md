@@ -3,6 +3,8 @@ title: Two decades of urban flood dynamics from Earth observation
 description: Using multi-temporal satellite imagery in Google Earth Engine to classify land cover over two decades and link the change statistically to shifting flood risk.
 summary: Classifies two decades of land cover in Google Earth Engine and links land-cover change statistically to shifting flood risk with explainable GeoAI.
 featured: true
+art: layers
+short_title: Two decades of urban flood dynamics
 order: 3
 theme: earth-observation
 status: Published

@@ -1,0 +1,27 @@
+{%- comment -%}
+  Row of profile icons (email, Scholar, ORCID, GitHub, LinkedIn) with accessible names. Icons come from al_icons.
+{%- endcomment -%}
+{% assign so = site.data.socials %}
+<ul class="site-icons" aria-label="Profiles">
+  <li>
+    <a href="mailto:{{ so.email }}" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+  </li>
+  <li>
+    <a href="https://scholar.google.com/citations?user={{ so.scholar_userid }}" aria-label="Google Scholar" rel="noopener"
+      ><i class="ai ai-google-scholar" aria-hidden="true"></i
+    ></a>
+  </li>
+  <li>
+    <a href="https://orcid.org/{{ so.orcid_id }}" aria-label="ORCID" rel="noopener"><i class="ai ai-orcid" aria-hidden="true"></i></a>
+  </li>
+  <li>
+    <a href="https://github.com/{{ so.github_username }}" aria-label="GitHub" rel="noopener"
+      ><i class="fa-brands fa-github" aria-hidden="true"></i
+    ></a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/{{ so.linkedin_username }}" aria-label="LinkedIn" rel="noopener"
+      ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+    ></a>
+  </li>
+</ul>

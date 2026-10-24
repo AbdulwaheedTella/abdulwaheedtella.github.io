@@ -107,6 +107,14 @@ hide_header: true
     </section>
   {% endif %}
 
+  {% assign sw = site.data.software | where: 'project', page.slug %}
+  {% if sw.size > 0 %}
+    <section aria-labelledby="code-h" class="site-section">
+      <h2 id="code-h" class="site-h2">Code and data</h2>
+      {% include site/software-list.liquid project=page.slug %}
+    </section>
+  {% endif %}
+
   {% if page.links %}
     <section aria-labelledby="links-h" class="site-section">
       <h2 id="links-h" class="site-h2">Links</h2>

@@ -10,10 +10,10 @@
 #
 # Only add facts you can point to. Dates are shown exactly as precisely as `precision` says.
 
-- date: 2026-09-01
+- date: 2026-10-01
   precision: month
   type: milestone
-  text: Google Scholar now shows 1,000+ citations and an h-index of 13 (as reported on my September 2026 CV).
+  text: Google Scholar now shows more than 1,080 citations, an h-index of 15 and an i10-index of 16.
   link: https://scholar.google.com/citations?user=VNYbr6cAAAAJ&hl=en
   link_label: Google Scholar profile
 

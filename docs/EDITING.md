@@ -10,6 +10,9 @@ Content is separate from presentation. Edit data, not templates.
 | Research themes                         | `_data/research.yml` (reference publications by `id` and projects by file name)                                                                                |
 | Positions, education                    | `_data/experience.yml`, `_data/education.yml`                                                                                                                  |
 | Teaching, service, grants, awards       | `_data/service.yml`                                                                                                                                            |
+| Home-page recognition and service list  | `_data/recognition.yml` (one line per entry)                                                                                                                   |
+| Talks, workshops, conferences, photos   | `_data/events.yml` (format at the top of the file); photos go in `assets/img/events/`                                                                          |
+| Research code and data (Zenodo)         | `_data/software.yml`                                                                                                                                           |
 | Skills                                  | `_data/skills.yml`                                                                                                                                             |
 | Public GitHub repositories              | `_data/repositories.yml` (hand-maintained snapshot; no third-party widgets)                                                                                    |
 | A project case study                    | A new file in `_projects/` (copy an existing one). `featured: true` puts it on the home page; `order` sorts it.                                                |

@@ -2,7 +2,7 @@
 layout: site
 permalink: /contact/
 title: Contact
-nav: true
+nav: false
 nav_order: 8
 eyebrow: Contact
 heading: Get in touch

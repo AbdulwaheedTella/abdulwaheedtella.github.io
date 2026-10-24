@@ -1,0 +1,66 @@
+# Talks, panels, workshops and conferences, shown on /talks/ (newest first, grouped by year).
+#
+#   - date: 2026-03-01            # YYYY-MM-DD (use the 1st when only the month is known)
+#     precision: month            # day | month | year
+#     role: Expert panellist       # what you did: Speaker, Presenter, Panellist, Workshop instructor, Session host, Organiser, Attendee
+#     title: Talk or session title  # optional
+#     event: Name of the conference, seminar or webinar
+#     location: City, Country      # or "Online"
+#     summary: One or two sentences on what you presented or contributed.
+#     photos:                      # optional; put files in assets/img/events/ (JPG, about 1600px wide)
+#       - file: 2026-policy-dialogue-1.jpg
+#         alt: Describe what the photo shows, for screen readers
+#     links:                       # optional: slides, recording, programme, news story
+#       - { label: Slides, url: "https://..." }
+#
+# Events where you had a role (speaker, panellist, instructor, organiser) carry the most weight.
+# Events you only attended are better kept short, or listed under `attended`.
+
+- date: 2026-03-01
+  precision: month
+  role: Expert panellist
+  title: "Policy Making Under Rapid Emergence: Theory, Evidence, and Research Utilisation in Southeast Asian Higher Education"
+  event: International Higher Education Policy Dialogue
+  summary: >-
+    Spoke on the institutional challenges of adopting AI and on evidence-based strategies for responsible AI integration, with
+    policymakers and academics from across Southeast Asia. Co-organised by Liverpool John Moores University, The British Academy,
+    Lao Hong University, Prince of Songkla University and the University of the Philippines Cebu.
+
+- date: 2026-01-01
+  precision: month
+  role: Workshop instructor
+  title: Machine Learning for Flood Susceptibility Mapping using Google Earth Engine
+  event: Africans in Environmental Science
+  summary: A hands-on workshop to build capacity among early-career African researchers in machine learning for flood mapping.
+
+- date: 2024-01-01
+  precision: year
+  role: Best Student Paper Award
+  event: IEEE Geoscience and Remote Sensing Symposium
+  summary: Received the Best Student Paper Award.
+
+- date: 2021-07-01
+  precision: month
+  role: Session host
+  event: World Engineering, Science and Technology Congress (ESTCON)
+  summary: Coordinated and managed conference sessions and kept the programme on schedule.
+
+- date: 2020-01-01
+  precision: year
+  role: Fully sponsored delegate
+  event: 14th Saudi GIS Symposium
+  summary: Attended with a full conference sponsorship grant.
+
+- date: 2020-01-01
+  precision: year
+  role: Co-author, three papers
+  event: Intercontinental Geoinformation Days (IGD)
+  location: Mersin, Turkey
+  summary: Three papers in the proceedings, on land-use change in a Malaysian metropolitan city and on aerosol optical thickness monitoring in Lagos.
+
+- date: 2018-01-01
+  precision: year
+  role: Organiser
+  event: First undergraduate research conference, Foresight Institute of Research and Translation (FIRAT)
+  location: Nigeria
+  summary: Organised the institute's first undergraduate research conference as secretary of the planning committee.

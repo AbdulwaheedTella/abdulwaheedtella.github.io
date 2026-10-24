@@ -1,11 +1,12 @@
 {%- comment -%}
-  News entries from _data/news.yml, newest first. Params: limit (optional number), featured (true = featured entries only).
+  News entries from _data/news.yml, newest first. Params: limit (optional number), featured (true = featured entries only),
+  compact (true = stacked date and text, for narrow columns).
 {%- endcomment -%}
 {% assign items = site.data.news | sort: 'date' | reverse %}
 {% if include.featured %}
   {% assign items = items | where: 'featured', true %}
 {% endif %}
-<ul class="site-news">
+<ul class="site-news{% if include.compact %} site-news-compact{% endif %}">
   {% for n in items limit: include.limit %}
     <li>
       <p class="site-news-date">

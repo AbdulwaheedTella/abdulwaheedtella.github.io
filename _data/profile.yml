@@ -24,12 +24,12 @@ stats:
   - value: "16"
     label: Journal articles
     note: Peer-reviewed, the majority in Q1 journals
-  - value: "1,000+"
+  - value: "1,080+"
     label: Citations
-    note: Google Scholar, September 2026
-  - value: "13"
+    note: Google Scholar, October 2026
+  - value: "15"
     label: h-index
-    note: Google Scholar, September 2026
+    note: Google Scholar, October 2026
   - value: "25+"
     label: Peer reviews
     note: For indexed journals
@@ -55,3 +55,13 @@ current_focus:
   - Publishing the APNIC Foundation study on AI capability disparities across ASEAN (manuscript under review)
 # Public CV PDF. Put the file at this path and the CV page shows a download button; until then it offers a request-by-email note.
 cv_pdf: /assets/pdf/Abdulwaheed_Tella_CV.pdf
+
+# Profile card on the home page (shown under the name, one line each)
+card_lines:
+  - PhD Candidate, Geospatial AI and Flood Modelling
+  - Department of Civil Engineering
+  - Monash University Malaysia
+  - Selangor, Malaysia
+tagline: >-
+  I build explainable, transferable machine-learning models from satellite and geospatial data, and I am open to research
+  collaborations and applied GeoAI projects.

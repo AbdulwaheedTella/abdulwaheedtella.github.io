@@ -1,5 +1,6 @@
 {%- comment -%}
-  One publication. Params: pub (an entry of site.data.publications.published), compact (optional, hides the year column).
+  One publication. Params: pub (an entry of site.data.publications.published), compact (optional, hides the left column),
+  numbered (optional, shows the CV number such as J16 instead of the year).
   The data-* attributes drive the filters on the publications page.
 {%- endcomment -%}
 {% assign pub = include.pub %}
@@ -11,7 +12,9 @@
   data-text="{{ pub.title | append: ' ' | append: pub.authors | append: ' ' | append: pub.venue | strip_html | downcase | escape }}"
 >
   {% unless include.compact -%}
-    <span class="site-pub-year">{{ pub.year }}</span>
+    <span class="site-pub-year">
+      {%- if include.numbered %}[{{ pub.id }}]{% else %}{{ pub.year }}{% endif -%}
+    </span>
   {%- endunless %}
   <div class="site-pub-body">
     <p class="site-pub-title">

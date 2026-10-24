@@ -1,0 +1,19 @@
+{%- comment -%}
+  Research code and data from _data/software.yml. Param: project (optional slug; limits the list to that project).
+{%- endcomment -%}
+{% assign items = site.data.software %}
+{% if include.project %}{% assign items = items | where: 'project', include.project %}{% endif %}
+<ul class="site-rows">
+  {% for sw in items %}
+    <li>
+      <strong
+        ><a href="https://doi.org/{{ sw.doi }}" rel="noopener">{{ sw.title }}</a></strong
+      >
+      <span class="site-badge">
+        {%- if sw.access == 'open' %}Open access{% else %}Restricted, request via Zenodo{% endif -%}
+      </span>
+      <span class="site-muted">Zenodo, {{ sw.year }}, {{ sw.license }}</span>
+      <p>{{ sw.description }}</p>
+    </li>
+  {% endfor %}
+</ul>

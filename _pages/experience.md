@@ -2,7 +2,7 @@
 layout: site
 permalink: /experience/
 title: Experience
-nav: true
+nav: false
 nav_order: 5
 eyebrow: Experience
 heading: Experience, teaching and service
