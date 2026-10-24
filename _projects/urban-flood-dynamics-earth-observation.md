@@ -1,43 +1,25 @@
 ---
 title: Two decades of urban flood dynamics from Earth observation
-description: Using multi-temporal satellite imagery in Google Earth Engine to classify land cover over two decades and link the change statistically to shifting flood risk.
-summary: Classifies two decades of land cover in Google Earth Engine and links land-cover change statistically to shifting flood risk with explainable GeoAI.
-featured: true
-art: layers
 short_title: Two decades of urban flood dynamics
-order: 3
+description: How land-cover change in Kuala Lumpur between 2000 and 2020 shifted flood susceptibility, modelled with machine learning on satellite-derived data and explained with SHAP.
+summary: How two decades of urban growth in Kuala Lumpur changed where floods are most likely, from satellite data and explainable machine learning.
+featured: true
+order: 2
 theme: earth-observation
 status: Published
 period: Published 2025
-role: Lead author
-problem: Cities change faster than hazard maps are updated. Quantifying how land-cover change has shifted flood risk needs consistent satellite records over long periods.
-tech: [Google Earth Engine, Multi-temporal satellite imagery, Land-cover classification, Change detection, Explainable machine learning]
-contribution: A workflow that goes from two decades of satellite imagery to classified land cover, quantified change and a statistical link between that change and flood risk.
-outcome: Published in Earth Systems and Environment (Q1, 2025). A related earth-observation paper on land use in conflict-affected north-east Nigeria was published in Land Use Policy.
-pipeline:
-  - { label: Imagery, detail: "Multi-temporal satellite archive in GEE" }
-  - { label: Classify, detail: "Land-cover maps per epoch" }
-  - { label: Change, detail: "Quantify land-cover change" }
-  - { label: Link to risk, detail: "Explainable GeoAI" }
-publications: [J14, J13, BC2]
+image: /assets/img/projects/urban-flood-dynamics-earth-observation.jpg
+image_alt: Two land-cover maps of Kuala Lumpur for 2000 and 2020, showing impervious surfaces in red expanding at the expense of vegetation in green.
+image_credit: Land cover in Kuala Lumpur, 2000 (left) and 2020 (right). Figure from Tella et al. (2025), Earth Systems and Environment. © King Abdulaziz University and Springer Nature Switzerland AG 2025, reproduced by the author.
+image_source: https://doi.org/10.1007/s41748-025-00878-7
+results:
+  - "Random forest reached 96% accuracy for 2000 and 94% for 2020; logistic regression reached 93% and 89% and tended to under-predict risk zones."
+  - "Impervious surfaces were the dominant factor associated with high flood susceptibility, followed by NDVI. Urban growth and vegetation loss coincided with the high-susceptibility zones in both years."
+  - "SHAP showed that the influence of elevation, NDVI and drainage density shifted between the two decades."
+  - "A new threshold-based MNDWI method improved the detection of surface water and flood points, and can be applied to other cities."
+tech: [Google Earth Engine, Multi-temporal satellite imagery, Land-cover classification, Random forest, Logistic regression, SHAP, MNDWI]
+publications: [J14]
 related: [explainable-geoai-flood-susceptibility]
-links:
-  - { label: "Paper: Earth Systems and Environment (2025)", url: "https://doi.org/10.1007/s41748-025-00878-7" }
-  - { label: "Paper: Land Use Policy (2025)", url: "https://doi.org/10.1016/j.landusepol.2025.107673" }
 ---
 
-## Context
-
-Flood risk in a fast-growing city is a moving target. Sealed surfaces replace vegetation and drainage paths change, while most susceptibility maps are built for a single point in time. Long satellite records let the change be measured rather than assumed.
-
-## Approach
-
-- **Processed at scale.** Two decades of multi-temporal satellite imagery were processed in Google Earth Engine.
-- **Classified and quantified.** Land cover was classified and the change between epochs quantified.
-- **Linked change to risk.** The land-cover change was tied statistically to shifting environmental risk using an explainable GeoAI approach, keeping the link between cause and outcome visible.
-
-## Related earth-observation work
-
-- _Land Use Policy_ (2025) analyses land-use dynamics in armed-conflict hotspots in north-east Nigeria using earth observation data.
-- A chapter in the Elsevier volume _Google Earth Engine and Artificial Intelligence for Earth Observation_ (2025) covers GEE and AI for the Sustainable Development Goals.
-- I delivered a workshop on machine learning for flood susceptibility mapping in Google Earth Engine for Africans in Environmental Science (January 2026), and an international hands-on workshop on machine learning for environmental mapping in GEE.
+Most flood studies look at a single point in time, while cities keep changing. This work compares flood susceptibility in Kuala Lumpur in 2000 and 2020, using land cover derived from two decades of satellite imagery in Google Earth Engine together with climate, terrain and hydrological variables. Random forest and logistic regression model the flood-prone areas for each year, and SHAP explains how the drivers changed as the city grew. The results point to controlling impervious surfaces and protecting vegetation as practical levers for reducing flood risk.

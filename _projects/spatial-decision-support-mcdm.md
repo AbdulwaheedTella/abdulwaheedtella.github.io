@@ -1,35 +1,25 @@
 ---
-title: Spatial decision support with multi-criteria analysis
-description: GIS-based multi-criteria decision analysis for flood susceptibility, landslide proneness along a highway, and landfill siting.
-summary: Applies GIS and multi-criteria decision analysis to flood susceptibility, highway landslide risk and landfill siting, turning spatial data into ranked, defensible options.
-featured: false
-order: 7
+title: Spatial decision support with GIS and multi-criteria analysis
+short_title: Landfill siting and hazard mapping with GIS
+description: GIS and multi-criteria decision analysis that turn many spatial factors into ranked maps for landfill siting in Lagos, flood susceptibility in Ibadan and highway landslide risk in Malaysia.
+summary: GIS and multi-criteria analysis that turn many spatial factors into ranked, defensible maps for siting and hazard decisions.
+featured: true
+order: 3
 theme: decision-support-and-policy
-status: Published
-period: 2017 to 2024
-role: Lead or contributing author
-problem: Siting and risk decisions involve several competing criteria. Decision-makers need a transparent way to combine spatial layers into a ranking they can defend.
-tech: [ArcGIS Pro, QGIS, Multi-criteria decision making (MCDM), Fuzzy methods, Remote sensing]
-contribution: Ensemble fuzzy MCDM for flood susceptibility, a comparative assessment of data mining, MCDM and fuzzy computing, and GIS-based MCDM for highway landslide proneness and landfill suitability.
-outcome: Four Q1 journal articles, from the 2020 Natural Hazards flood susceptibility paper to the 2024 landfill suitability study in Lagos.
-pipeline:
-  - { label: Criteria, detail: "Spatial layers and factors" }
-  - { label: Weighting, detail: "MCDM, fuzzy, AHP" }
-  - { label: Overlay, detail: "GIS suitability or hazard surface" }
-  - { label: Decision, detail: "Ranked areas and corridors" }
+status: Published (4 journal articles)
+period: 2020 to 2025
+image: /assets/img/projects/spatial-decision-support-mcdm.jpg
+image_alt: Landfill suitability map of Lagos State, Nigeria, classed from very low to very high, with the most suitable areas in the east around Epe and Ibeju-Lekki.
+image_credit: Landfill suitability in Lagos State. Figure from Tella et al. (2024), International Journal of Environmental Science and Technology, CC BY 4.0.
+image_source: https://doi.org/10.1007/s13762-024-05803-5
+results:
+  - "In Lagos State, nine factors were weighted with fuzzy AHP. Distance to water bodies (22%), roads (19%) and settlements (17%), and land cover (11%) carried the most weight."
+  - "About 629 km² (16.7%) of Lagos State was classed as high or very high suitability for landfill, concentrated in Epe, Ikorodu and Ibeju-Lekki, the less urbanised areas."
+  - "Ensemble fuzzy MCDM mapped flood susceptibility in Ibadan, Nigeria, and a comparison of data mining, MCDM and fuzzy computing for flood mapping followed in Geocarto International."
+  - "MCDM and GIS ranked landslide proneness along the Taiping to Ipoh highway corridor in Malaysia."
+tech: [ArcGIS Pro, QGIS, Fuzzy AHP, Multi-criteria decision making, Remote sensing]
 publications: [J12, J10, J9, J1]
-related: [ai-capability-asean, air-quality-machine-learning-malaysia]
-links:
-  - { label: "Paper: Natural Hazards (2020)", url: "https://doi.org/10.1007/s11069-020-04272-6" }
-  - { label: "Paper: Int. J. Environmental Science and Technology (2024)", url: "https://doi.org/10.1007/s13762-024-05803-5" }
+related: [air-quality-machine-learning-malaysia, ai-capability-asean]
 ---
 
-## Context
-
-Where the question is "which site, which corridor, which area first", a transparent multi-criteria analysis can be more useful than a black-box model. This is where my work started: my undergraduate dissertation was flood susceptibility mapping with GIS and MCDM.
-
-## Applications
-
-- **Flood susceptibility.** An ensemble fuzzy MCDM approach for Ibadan, Nigeria (_Natural Hazards_, 2020), and a comparison of data mining, multi-criteria decision making and fuzzy computing for spatial flood susceptibility (_Geocarto International_, 2022).
-- **Infrastructure corridor risk.** A highway proneness appraisal for landslides along the Taiping to Ipoh segment in Malaysia using MCDM and GIS (_Sustainability_, 2022).
-- **Facility siting.** Data-driven landfill suitability mapping for Lagos State with GIS-based MCDM (_International Journal of Environmental Science and Technology_, 2024).
+Many planning questions are about choosing places: where a landfill should go, which stretch of road is most exposed, which neighbourhoods to protect first. These studies use GIS and multi-criteria decision analysis, including fuzzy AHP and ensemble fuzzy methods, to combine many spatial factors into ranked suitability and hazard maps that decision-makers can read and defend. Applications cover landfill siting in Lagos, flood susceptibility in Ibadan and landslide proneness along a Malaysian highway.

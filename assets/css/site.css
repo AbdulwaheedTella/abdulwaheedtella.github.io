@@ -424,41 +424,6 @@ html[data-theme="dark"] .site .site-btn-primary:hover {
 .site-fact .site-tags {
   margin-top: 0.25rem !important;
 }
-.site-pipeline {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0;
-  counter-reset: none;
-}
-.site-pipeline li {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  padding: 0.9rem 1rem 0.9rem 1rem;
-  border: 1px solid var(--site-line);
-  margin-left: -1px;
-  font-size: 0.9rem;
-  line-height: 1.45;
-  background: var(--global-card-bg-color);
-}
-.site-pipeline li:first-child {
-  margin-left: 0;
-  border-radius: var(--site-radius) 0 0 var(--site-radius);
-}
-.site-pipeline li:last-child {
-  border-radius: 0 var(--site-radius) var(--site-radius) 0;
-}
-.site-pipeline li span:last-child {
-  color: var(--site-muted);
-}
-.site-pipeline-n {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--global-theme-color);
-}
 .site-back {
   margin-top: 3rem !important;
 }
@@ -965,11 +930,15 @@ html[data-theme="dark"] .site .site-btn-primary:hover {
   border-color: var(--global-theme-color);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
-.site-tile-art {
+.site-tile-img {
   display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  background: #fff;
+  border-bottom: 1px solid var(--site-line);
 }
 .site-tile-title {
   font-weight: 700;
@@ -981,66 +950,6 @@ html[data-theme="dark"] .site .site-btn-primary:hover {
   color: var(--site-muted);
   padding: 0 0.85rem 0.8rem;
 }
-/* Tile illustration palette (light and dark) */
-.site-tile-art .art-bg-a {
-  fill: #e6f1f8;
-}
-.site-tile-art .art-bg-b {
-  fill: #eef3ee;
-}
-.site-tile-art .art-bg-c {
-  fill: #f3efe6;
-}
-.site-tile-art .art-bg-d {
-  fill: #efecf6;
-}
-.site-tile-art .art-fill-1 {
-  fill: #cfe3d2;
-}
-.site-tile-art .art-fill-2 {
-  fill: #9cc7e2;
-}
-.site-tile-art .art-fill-3 {
-  fill: #3d86b8;
-}
-.site-tile-art .art-patch {
-  fill: #c98f4e;
-  opacity: 0.75;
-}
-.site-tile-art .art-line {
-  fill: none;
-  stroke: #0b5c8a;
-  stroke-width: 2;
-}
-.site-tile-art .art-line-soft {
-  opacity: 0.4;
-}
-.site-tile-art .art-dot {
-  fill: #9fb7a4;
-}
-.site-tile-art .art-dot-strong {
-  fill: #2f7d57;
-}
-.site-tile-art .art-outline {
-  fill: none;
-  stroke: #2f7d57;
-  stroke-width: 2;
-  stroke-dasharray: 6 5;
-}
-.site-tile-art .art-edges line {
-  stroke: #8a80b8;
-  stroke-width: 2;
-}
-.site-tile-art .art-node {
-  fill: #b3abd6;
-}
-.site-tile-art .art-node-strong {
-  fill: #5b4fa0;
-}
-html[data-theme="dark"] .site-tile-art {
-  filter: brightness(0.82) saturate(0.9);
-}
-
 /* ---------- Home: two columns ---------- */
 .site-columns {
   display: grid;
@@ -1246,4 +1155,69 @@ html[data-theme="dark"] .site-tile-art {
   .site-event.has-photo {
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+/* ---------- Project pages: figure, results, card images ---------- */
+.site-figure {
+  margin: 0 0 1rem;
+}
+.site-figure img {
+  display: block;
+  width: 100%;
+  max-height: 34rem;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--site-line);
+  border-radius: 6px;
+}
+.site-figure figcaption {
+  font-size: 0.875rem;
+  color: var(--site-muted);
+  margin-top: 0.5rem;
+  max-width: 52rem;
+}
+.site-figure figcaption a {
+  margin-left: 0.35rem;
+  white-space: nowrap;
+}
+.site-section-first {
+  margin-top: 2rem;
+}
+.site-results {
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.6rem;
+  max-width: 52rem;
+}
+.site-results li::marker {
+  color: var(--global-theme-color);
+}
+.site-card.has-image {
+  padding: 0;
+  overflow: hidden;
+}
+.site-card-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #fff;
+  border-bottom: 1px solid var(--site-line);
+}
+.site-card.has-image .site-card-body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+.site-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  height: 100%;
+}
+.site-card-body p {
+  margin: 0;
+}
+html[data-theme="dark"] .site-figure img,
+html[data-theme="dark"] .site-tile-img,
+html[data-theme="dark"] .site-card-image img {
+  filter: brightness(0.9);
 }
