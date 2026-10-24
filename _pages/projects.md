@@ -6,14 +6,14 @@ nav: true
 nav_order: 3
 eyebrow: Selected work
 heading: Projects and case studies
-lede: A curated set of research and applied projects, each with the problem, my role, the methods and what came out of it. Open any project for the full case study.
+lede: Research and applied projects in GeoAI, Earth observation and decision support. Each page summarises the work, its key results, and the publications, code and data behind it.
 description: Selected GeoAI, Earth observation and decision-support projects by Abdulwaheed Tella, with problem, role, methods and outcomes.
 ---
 
 {% assign projects = site.projects | sort: 'order' %}
 
-<div class="site-stack">
-  {% for pr in projects %}{% include site/project-card.liquid project=pr detailed=true %}{% endfor %}
+<div class="site-grid">
+  {% for pr in projects %}{% include site/project-card.liquid project=pr %}{% endfor %}
 </div>
 
 <section class="site-section" id="code" aria-labelledby="code-h">

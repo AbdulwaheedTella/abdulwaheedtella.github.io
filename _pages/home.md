@@ -68,7 +68,7 @@ description: Abdulwaheed Tella is a GeoAI researcher (PhD candidate, Monash Univ
     {% for pr in featured %}
       <li class="site-tile">
         <a href="{{ pr.url | relative_url }}">
-          {% include site/tile-art.liquid kind=pr.art %}
+          <img class="site-tile-img" src="{{ pr.image | relative_url }}" alt="" loading="lazy">
           <span class="site-tile-title">{{ pr.short_title | default: pr.title }}</span>
           <span class="site-tile-caption">{{ pr.status }}</span>
         </a>
