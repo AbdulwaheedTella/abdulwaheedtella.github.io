@@ -3,6 +3,8 @@ title: Mapping AI capability disparities across ASEAN
 description: A multi-country, mixed-methods study of AI and digital-technology capability gaps across Asia-Pacific institutions, funded by an APNIC Foundation research fellowship.
 summary: A funded, multi-country study of AI capability gaps across ASEAN institutions, leading to evidence-based recommendations for a regional policy roadmap.
 featured: true
+art: network
+short_title: AI capability across ASEAN
 order: 5
 theme: decision-support-and-policy
 status: Fellowship completed (manuscript under review)

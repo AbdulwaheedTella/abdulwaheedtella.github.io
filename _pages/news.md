@@ -2,7 +2,7 @@
 layout: site
 permalink: /news/
 title: News
-nav: true
+nav: false
 nav_order: 6
 eyebrow: News and updates
 heading: News

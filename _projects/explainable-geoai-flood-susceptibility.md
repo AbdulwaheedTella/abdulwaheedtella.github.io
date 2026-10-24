@@ -3,6 +3,8 @@ title: Explainable GeoAI for flood susceptibility and urban exposure
 description: Benchmarking machine-learning and deep-learning flood susceptibility models, explaining them with SHAP, LIME and Accumulated Local Effects, and linking hazard surfaces to what is exposed.
 summary: Benchmarks machine-learning and deep-learning flood susceptibility models, explains their behaviour with SHAP, LIME and ALE, and links hazard surfaces to buildings, land use and population.
 featured: true
+art: flood
+short_title: Explainable GeoAI for flood risk
 order: 1
 theme: explainable-and-reliable-ai
 status: Published (2 journal articles)

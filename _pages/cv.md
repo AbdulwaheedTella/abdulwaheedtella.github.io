@@ -3,7 +3,7 @@ layout: site
 permalink: /cv/
 title: CV
 nav: true
-nav_order: 7
+nav_order: 5
 eyebrow: Curriculum vitae
 heading: CV
 lede: A web summary of the essentials. The full CV has the complete publication list, teaching record and referees.

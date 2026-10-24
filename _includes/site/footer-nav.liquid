@@ -1,0 +1,41 @@
+{%- comment -%} Site map shown at the bottom of every page, above the theme footer. {%- endcomment -%}
+<nav class="site-footer-nav" aria-label="Site map">
+  <div>
+    <h2>Site</h2>
+    <ul>
+      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+      <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+      <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+      <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2>More</h2>
+    <ul>
+      <li><a href="{{ '/experience/' | relative_url }}">Experience and service</a></li>
+      <li><a href="{{ '/news/' | relative_url }}">News</a></li>
+      <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2>Selected work</h2>
+    <ul>
+      {% assign fp = site.projects | where: 'featured', true | sort: 'order' %}
+      {% for pr in fp %}
+        <li>
+          <a href="{{ pr.url | relative_url }}">{{ pr.short_title | default: pr.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h2>Profiles</h2>
+    <ul>
+      <li><a href="{{ site.data.publications.scholar_url }}" rel="noopener">Google Scholar</a></li>
+      <li><a href="{{ site.data.publications.orcid_url }}" rel="noopener">ORCID</a></li>
+      <li><a href="https://github.com/{{ site.data.socials.github_username }}" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</nav>

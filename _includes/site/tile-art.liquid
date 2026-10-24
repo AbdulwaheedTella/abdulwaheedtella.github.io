@@ -1,0 +1,50 @@
+{%- comment -%}
+  Decorative, data-free illustration for a project tile. Param: kind (flood | grid | layers | network | default).
+  Purely ornamental, so it is hidden from assistive technology.
+{%- endcomment -%}
+<svg class="site-tile-art" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  {% case include.kind %}
+    {% when 'flood' %}
+      <rect width="320" height="180" class="art-bg-a" />
+      <path d="M0 120 C60 95 100 140 160 115 S260 90 320 112 V180 H0Z" class="art-fill-2" />
+      <path d="M0 140 C70 118 110 160 170 138 S270 118 320 134 V180 H0Z" class="art-fill-3" />
+      <path d="M0 70 C50 55 90 85 150 66 S250 46 320 62" class="art-line" />
+      <path d="M0 90 C55 75 95 104 155 86 S255 68 320 82" class="art-line art-line-soft" />
+      <path d="M0 50 C45 38 95 62 150 46 S255 30 320 42" class="art-line art-line-soft" />
+    {% when 'grid' %}
+      <rect width="320" height="180" class="art-bg-b" />
+      {% for r in (0..6) %}
+        {% for c in (0..12) %}
+          {% assign x = c | times: 24 | plus: 16 %}
+          {% assign y = r | times: 24 | plus: 18 %}
+          {% if c > 3 and c < 9 and r > 1 and r < 5 %}
+            <circle cx="{{ x }}" cy="{{ y }}" r="5" class="art-dot-strong" />
+          {% else %}
+            <circle cx="{{ x }}" cy="{{ y }}" r="3" class="art-dot" />
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      <rect x="100" y="48" width="122" height="76" rx="10" class="art-outline" />
+    {% when 'layers' %}
+      <rect width="320" height="180" class="art-bg-c" />
+      <g transform="translate(160 118) skewX(-28) scale(1 0.55)">
+        <rect x="-70" y="-10" width="150" height="110" rx="6" class="art-fill-3" />
+        <rect x="-70" y="-90" width="150" height="110" rx="6" class="art-fill-2" />
+        <rect x="-70" y="-170" width="150" height="110" rx="6" class="art-fill-1" />
+        <path d="M-60 -150 h40 v30 h30 v25 h-70z" class="art-patch" />
+        <path d="M-60 -70 h55 v40 h45 v25 h-100z" class="art-patch" />
+      </g>
+    {% when 'network' %}
+      <rect width="320" height="180" class="art-bg-d" />
+      <g class="art-edges">
+        <line x1="60" y1="60" x2="140" y2="40" /><line x1="140" y1="40" x2="220" y2="70" /><line x1="220" y1="70" x2="270" y2="130" />
+        <line x1="60" y1="60" x2="100" y2="130" /><line x1="100" y1="130" x2="180" y2="120" /><line x1="180" y1="120" x2="220" y2="70" />
+        <line x1="140" y1="40" x2="180" y2="120" /><line x1="180" y1="120" x2="270" y2="130" />
+      </g>
+      <circle cx="60" cy="60" r="9" class="art-node" /><circle cx="140" cy="40" r="13" class="art-node-strong" />
+      <circle cx="220" cy="70" r="10" class="art-node" /><circle cx="270" cy="130" r="7" class="art-node" />
+      <circle cx="100" cy="130" r="6" class="art-node" /><circle cx="180" cy="120" r="11" class="art-node-strong" />
+    {% else %}
+      <rect width="320" height="180" class="art-bg-a" />
+  {% endcase %}
+</svg>

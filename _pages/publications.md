@@ -21,11 +21,11 @@ description: Publications by Abdulwaheed Tella on explainable GeoAI, flood susce
   <a href="{{ site.data.publications.orcid_url }}" rel="noopener">ORCID<span class="sr-only"> (opens external site)</span></a>
 </p>
 <p class="site-note">
-  Citation figures on Google Scholar (1,000+ citations, h-index 13, as of September 2026) are reported on my CV. The list below follows the CV numbering. Publisher links are DOI links.
+  Citation figures on Google Scholar (1,000+ citations, h-index 13, as of September 2026) are reported on my CV. Numbers (J = journal, BC = book chapter, C = conference) match my CV. Titles link to the publisher via DOI.
 </p>
 
-<section class="site-section" aria-labelledby="sel-h">
-  <h2 id="sel-h" class="site-h2">Selected</h2>
+<section class="site-featured" aria-labelledby="sel-h">
+  <h2 id="sel-h" class="site-h2">Selected publications</h2>
   <ol class="site-pubs">
     {% assign selected = all | where: 'selected', true %}
     {% for pub in selected %}{% include site/pub-item.liquid pub=pub %}{% endfor %}
@@ -64,9 +64,18 @@ description: Publications by Abdulwaheed Tella on explainable GeoAI, flood susce
     <button type="reset" class="site-btn site-btn-small" id="f-reset">Clear</button>
   </form>
   <p class="site-result-count" id="pub-count" role="status" aria-live="polite">Showing {{ all.size }} of {{ all.size }}</p>
-  <ol class="site-pubs" id="pub-list">
-    {% for pub in all %}{% include site/pub-item.liquid pub=pub %}{% endfor %}
-  </ol>
+  <div id="pub-list">
+    {% assign years = all | map: 'year' | uniq | sort | reverse %}
+    {% for y in years %}
+      <div class="site-year-group" data-year-group>
+        <h3 class="site-year">{{ y }}</h3>
+        <ol class="site-pubs">
+          {% assign in_year = all | where: 'year', y %}
+          {% for pub in in_year %}{% include site/pub-item.liquid pub=pub numbered=true %}{% endfor %}
+        </ol>
+      </div>
+    {% endfor %}
+  </div>
   <p class="site-empty" id="pub-empty" hidden>No publications match these filters.</p>
 </section>
 
