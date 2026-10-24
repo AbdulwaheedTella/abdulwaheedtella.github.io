@@ -80,7 +80,7 @@ description: Publications by Abdulwaheed Tella on explainable GeoAI, flood susce
 </section>
 
 <section class="site-section" aria-labelledby="ip-h">
-  <h2 id="ip-h" class="site-h2">Under review and in preparation</h2>
+  <h2 id="ip-h" class="site-h2">Under review or in preparation</h2>
   <p class="site-note">Listed for transparency. These are not yet published and have no public links.</p>
   <ul class="site-rows">
     {% for ip in site.data.publications.in_progress %}
